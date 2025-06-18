@@ -1,0 +1,5 @@
+discord.py==2.5.2
+nest_asyncio
+pytz
+apscheduler
+Pillow
