@@ -14,12 +14,12 @@ GACHA_INFO['total_ssr_pilgrims'] = len(GACHA['pool']["ssr_pilgrims"])
 GACHA_INFO['total_ssr_others'] = len(GACHA['pool']["ssr_others"])
 
 
-# 共用 embed 產生函式
+
 
 def prob_check_embed() -> discord.Embed:
   prob_check_embed = discord.Embed(
     title="抽卡機率",
-    #color=discord.Color.red()
+
   )
   prob_check_embed.add_field(name="本期Pick up", value=", ".join(GACHA['pool']["ssr_pickup"]), inline=False)
   prob_check_embed.add_field(name="抽卡次數 冷卻時間", value=f"{GACHA['max_gacha']} 次 CD {GACHA['cooldown']} 秒", inline=False)
@@ -42,7 +42,7 @@ def prob_check_embed() -> discord.Embed:
 def gacha_pool_embed() -> discord.Embed:
   gacha_pool_embed = discord.Embed(
     title="卡池一覽",
-    #color=discord.Color.teal()
+
   )
   gacha_pool_embed.add_field(name="本期Pick up", value=f", ".join(GACHA['pool']["ssr_pickup"]), inline=False)
   gacha_pool_embed.add_field(name="SSR朝聖超標準", value=f"```{', '.join(GACHA['pool']['ssr_pilgrims'])}```", inline=False)
@@ -52,18 +52,17 @@ def gacha_pool_embed() -> discord.Embed:
   gacha_pool_embed.set_footer(text="目前所有卡池角色")
   return gacha_pool_embed
 
-# View 按鈕
 
 class gacha_info_view(View):
   def __init__(self):
     super().__init__(timeout=GACHA_INFO["view_timeout"])
-    # 初始化 message 屬性
+
     self.message = None  
 
-    # 假設第一個按鈕是預設藍色（主要）且要禁用
+
     for child in self.children:
       if isinstance(child, Button):
-        # 改成你預設藍色按鈕的 label
+ 
         if child.label == "抽卡機率":  
           child.style = discord.ButtonStyle.primary
           child.disabled = True
@@ -73,49 +72,39 @@ class gacha_info_view(View):
 
   @button(label="抽卡機率", style=discord.ButtonStyle.primary)
   async def prob_button(self, interaction: discord.Interaction, button: Button):
-    # 把所有按鈕變灰，自己變藍
+
     for child in self.children:
       if isinstance(child, Button):
         if child == button:
           child.style = discord.ButtonStyle.primary
-          # 藍色且禁止點擊
+
           child.disabled = True   
         else:
           child.style = discord.ButtonStyle.secondary
-          # 灰色且可點
+
           child.disabled = False  
     await interaction.response.edit_message(embed=prob_check_embed(), view=self)
 
   @button(label="卡池一覽", style=discord.ButtonStyle.secondary)
   async def list_button(self, interaction: discord.Interaction, button: Button):
-    # 把所有按鈕變灰，自己變藍
+
     for child in self.children:
       if isinstance(child, Button):
         if child == button:
           child.style = discord.ButtonStyle.primary
-          # 藍色且禁止點擊
+
           child.disabled = True   
         else:
           child.style = discord.ButtonStyle.secondary
-          # 灰色且可點
+
           child.disabled = False 
     await interaction.response.edit_message(embed=gacha_pool_embed(), view=self)
 
   async def on_timeout(self):
-    # 禁用所有按鈕
+
     for child in self.children:
       child.disabled = True
-    """
-    try:
-      if self.message:
-        # 刪除整個訊息
-        await self.message.delete()
-        # 或改成移除 View（按鈕）
-        # await self.message.edit(view=None)
-    except Exception as e:
-      print(f"gacha_info_prefix error {e}")
-    """
-    # 嘗試更新訊息（此 view 綁定的訊息）
+
     try:
       if self.message:
         await self.message.edit(view=self)
@@ -135,7 +124,7 @@ class gacha_info_prefix(commands.Cog):
 
     if not GACHA_INFO["enable"]:
       return
-    # 頻道判斷
+
     if ctx.channel.id != GACHA_INFO["channel"]:
       return
 
