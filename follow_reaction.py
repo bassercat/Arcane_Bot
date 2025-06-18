@@ -24,7 +24,7 @@ class follow_reaction(commands.Cog):
       return
 
     message = reaction.message
-    # 判斷是否在目標頻道
+
     if message.channel.id != FOLLOW_REACTION["channel"]:
       return
 
@@ -33,14 +33,12 @@ class follow_reaction(commands.Cog):
       return
     self.last_react_time = now
 
-    # 如果這個反應總數 >= 3
+
     if reaction.count >= 3:
       message = reaction.message
       emoji = reaction.emoji
 
-      # 檢查 BOT 是否已經加過這個 emoji
       for r in message.reactions:
-        # BOT 已經按過，不再反應
         if r.emoji == emoji and r.me:
           return  
 
