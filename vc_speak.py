@@ -20,24 +20,20 @@ class vc_speak_prefix(commands.Cog):
     if not VC_SPEAK["enable"]:
       return
 
-    # 不在允許頻道，沒打字 不做任何回應
     if ctx.channel.id != VC_SPEAK["command"] or not text.strip():
       return
     
-    # 固定使用 小雨（台灣）
     voice = "zh-TW-HsiaoYuNeural"  
 
     voice_path = VC_SPEAK['voice_path']
 
     try:
 
-      # 取得 bot 在該伺服器的語音連線物件
       vc = ctx.guild.voice_client
 
       if not vc:
         return
 
-      # 正在播放語音 return
       if vc.is_playing():
         os.remove(voice_path)
         return
@@ -68,7 +64,6 @@ class vc_speak_prefix(commands.Cog):
     if not VC_SPEAK["enable"]:
       return
 
-    # 不在允許頻道，沒打字 不做任何回應
     if ctx.channel.id != VC_SPEAK["command"]:
       return
 
