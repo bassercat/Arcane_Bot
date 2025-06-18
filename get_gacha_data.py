@@ -14,13 +14,13 @@ class get_gacha_data_prefix(commands.Cog):
     self.bot = bot
 
   @commands.command(name="dw")
-  #@commands.command(name="dw", aliases=["dw"])
+
   @commands.cooldown(rate=1, per=GET_GACHA_DATA["cooldown"], type=commands.BucketType.member)
   async def gacha_stats(self, ctx):
 
     if not GET_GACHA_DATA["enable"]:
       return
-    # 判斷訊息是否來自特定允許的頻道
+
     if ctx.channel.id != GET_GACHA_DATA["channel"]:
       return
 
@@ -60,6 +60,6 @@ class get_gacha_data_prefix(commands.Cog):
 
 
     
-# 註冊 COG
+
 async def setup(bot):
   await bot.add_cog(get_gacha_data_prefix(bot))
