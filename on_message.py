@@ -9,12 +9,10 @@ class on_message(commands.Cog):
 
   @commands.Cog.listener()
   async def on_message(self, message):
-    # 忽略機器人自己發的訊息
+
     if message.author.bot:
       return
 
-    # 確保 prefix 指令可以正常運作
-    #await self.bot.process_commands(message)
 
     await auto_emoji_react(self.bot, message)
     await chat_draw_one(self.bot, message)
