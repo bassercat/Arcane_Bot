@@ -1,0 +1,400 @@
+{
+  "WHITELIST_IDS": [358124858552614912],
+
+  "BIRTHDAY": {
+    "UE" : "0616",
+    "阿虛" : "0215",
+    "Wing" : "0912",
+    "nn7" : "0911"
+  },
+
+  "MAIN": {
+    "guild_id": 1333115184981479454,
+    "remove_global_commands": false,
+    "sync_global_commands": false,
+    "remove_guild_commands": false,
+    "sync_guild_commands": true
+  },
+
+  "MAIN_2": {
+    "guild_id": 368417445565693953,
+    "remove_global_commands": false,
+    "sync_global_commands": false,
+    "remove_guild_commands": false,
+    "sync_guild_commands": true
+  },
+
+  "BOT_STATUS": {
+    "current" : "set1",
+    "set1" :{
+      "name": "阿爾卡娜",
+      "avatar": "assets/bot_status/set1.png",
+      "activity" : "",
+      "status" : "online"
+    },
+    "set2" :{
+      "name": "謝芙蒂",
+      "avatar": "assets/bot_status/set2.png",
+      "activity" : "",
+      "status" : "online"
+    },
+    "set3" :{
+      "name": "Doro",
+      "avatar": "assets/bot_status/set3.png",
+      "activity" : "",
+      "status" : "online"
+    }
+  },
+
+  "CHANNEL_IDS": {
+    "command": 1372864336376365099,
+    "chat": 1333115184981479456,
+    "game": 1372912206127169596
+  },
+
+  "CHANNEL_IDS_2": {
+    "command": 1372746901434273873,
+    "chat": 1372746918672859177,
+    "game": 1372746932597948467
+  },
+
+  "COMMAND_CONVERSION": {
+    "enable": true,
+    "channel": "game"
+  },
+
+  "SAY_COMMAND": {
+    "enable": true,
+    "command": "command",
+    "channel": "chat"
+  },
+
+  "EMOJI_COMMAND": {
+    "enable": true,
+    "command": "command",
+    "channel": "chat"
+  },
+
+  "DAILY_EN_LOGIN_REMINDER": {
+    "enable": true,
+    "channel": "chat",
+    "hour": 23,
+    "minute": 0,
+    "message": "@everyone 簽到了寶子們 :doro_flower_g: https://discord.com/channels/946719263866101821/1300742310186975232"
+  },
+
+  "AUTO_EMOJI_REACT": {
+    "enable": true,
+    "channel": "chat",
+    "prob": 0.01,
+    "emojis": ["z_arcane_angry","z_arcane_lol","z_arcane_ori","z_arcane_shy","z_arcane_sleep",
+          "z_arcane_smile","z_arcane_surprise"]
+  },
+
+  "GACHA": {
+    "enable": true,
+    "channel": "game",
+    "cooldown": 60,
+    "max_gacha": 10,
+
+    "bonus_chance": 0.01,
+    "max_bonus_gacha": 100,
+
+    "r_prob": 0.53,
+    "sr_prob": 0.43,
+    "ssr_prob": 0.04,
+
+    "ssr_pickup_prob": 0.02,
+    "ssr_pilgrims_prob": 0.005,
+    "ssr_others_prob": 0.015,
+
+    "ssr_embed_color": [255, 215, 0],
+    "sr_embed_color": [168, 108, 247],
+    "r_embed_color": [61, 157, 246],
+
+    "r_img":"https://cdn.discordapp.com/attachments/1374057184622542978/1374067166000971857/A3.jpg?ex=683fd105&is=683e7f85&hm=99aadf480ee2a477d81631eaaf2d085d598f1a4a3cffa9bd99c8404c3be695cf&",
+    "sr_img":"https://media.discordapp.net/attachments/1374057184622542978/1374067166663676024/A2.png?ex=683fd105&is=683e7f85&hm=759780258b0c7f4dd2ccc4980881691930493e6e86269cef5fa7d5c6048c8c54&=&format=webp&quality=lossless",
+    "ssr_img":"https://media.discordapp.net/attachments/1374057184622542978/1374067166382395392/2025-05-20_002311.jpg?ex=683fd105&is=683e7f85&hm=deb0280cc3c41df2d08a21d3f1c92c5d37d0657285836a75607996732631582a&=&format=webp",
+
+    "img_enable": true,
+
+    "save_enable": true,
+    "gacha_data_path": "data/gacha_data.json",
+    "gacha_data_backup_path": "data/gacha_data_backup.json",
+
+    "pool" : {
+      "ssr_pickup": ["蕾雯"],
+      "ssr_pilgrims": [
+        "哈蘭", "白雪公主", "諾雅", "紅蓮", "伊莎貝爾", "長髮公主", "神罰",
+        "桃樂絲", "小紅帽", "紅蓮：暗影", "皇冠", "小美人魚",
+        "灰姑娘", "格拉維", "拉毗：小紅帽", "米哈拉：羈絆鎖鏈"
+      ],
+      "ssr_others": [
+        "麥斯威爾", "舒格", "艾可希雅", "愛麗絲", "艾瑪", "尤妮", "普麗瓦蒂", "尤莉亞", "普琳瑪",
+        "西格娜", "波莉", "米蘭達", "布麗德", "索林", "迪賽爾", "桑迪", "銀華", "德雷克",
+        "克拉烏", "梅里", "艾德米", "吉蘿婷", "魯德米拉", "楊", "艾菲涅爾", "阿莉亞", "沃綸姆",
+        "諾伊斯", "富克旺", "梅登", "麗塔", "諾薇兒", "朵拉", "露菲", "尤爾夏", "米爾克", "佩珀",
+        "貝斯蒂", "海倫", "拉普拉斯", "豺狼", "毒蛇", "可可", "索達", "餅乾", "櫻花", "D",
+        "布蘭兒", "諾亞爾", "羅珊娜", "尼羅", "馬斯特", "馬律哈那", "娜嘉", "蒂亞", "基里",
+        "托比", "萊昂納", "牡丹", "普麗瓦蒂：不友善的女僕", "愛德", "伊萊格", "D：殺手妻子",
+        "貝伊", "特羅尼", "索達：閃亮兔女郎", "愛麗絲：仙境兔女郎", "克雷伊", "愛因", "茨瓦伊",
+        "露姬", "坎西：逃生女王", "潘托姆", "魯瑪妮", "芙蘿拉", "瑪娜", "瑪斯特：浪漫的女僕",
+        "安克：天真的女僕", "特蕾娜", "布蕾德", "克勞斯特", "阿爾卡娜", "K"   
+      ],
+      "sr": [
+        "N102", "米哈拉", "艾瑟兒", "拉毗", "尼恩", "德爾塔", "貝洛塔", "米卡", "阿妮斯"
+      ],
+      "r": [
+        "產品08", "產品12", "產品23", "士兵E.G.", "士兵F.A.", "士兵O.W.", "iDoll花", "iDoll海", "iDoll太陽"
+      ]
+    }
+  },
+
+  "GACHA_INFO": {
+    "enable": true,
+    "channel": "game",
+    "cooldown": 60,
+    "view_timeout": 60
+  },
+
+  "DORO_GRID": {
+    "enable": true,
+    "channel": "game",
+    "cooldown": 60,
+    "view_timeout": 60,
+    "lose_img": "https://media.discordapp.net/attachments/1374057184622542978/1374067298515685396/doro_trophy_blue.png?ex=683fd124&is=683e7fa4&hm=c512ee54b6b26fd0b3e6c5ce290c694d0b9c29ea0c6f99726626f4bbea19bf11&=&format=webp&quality=lossless",
+    "win_img": "https://media.discordapp.net/attachments/1374057184622542978/1374067299241427094/fd758e70-7514-4208-9e4a-ffcf8a7f9237.png?ex=683fd125&is=683e7fa5&hm=bc4ef0e0d0a29d0441c20f63b92ee125e1a4534428f4d2788d1bad97f6d83f9f&=&format=webp&quality=lossless",
+    "default_emoji": "❓",
+    "true_emoji": "doro_trophy",
+    "false_emoji": "doro_trophy_blue"
+  },
+
+  "RUB_DOLL": {
+    "enable": true,
+    "channel": "game",
+    "cooldown": 60,
+    "view_timeout": 60,
+    "r_0_img":"https://media.discordapp.net/attachments/1374057184622542978/1380259490498220052/4.png?ex=68433a52&is=6841e8d2&hm=73d5672e9b090a3ceb12f6e4fb973bb42e16b7f5c68e1fea6fe20bf8865423c0&=&format=webp&quality=lossless",
+    "r_5_img":"https://media.discordapp.net/attachments/1374057184622542978/1380259490116403310/3.png?ex=68433a52&is=6841e8d2&hm=fb7b62e7bd07b318bbf2a9ff341843090d095ce8f7d3fcdf04141f3f3bd56948&=&format=webp&quality=lossless",
+    "r_10_img":"https://media.discordapp.net/attachments/1374057184622542978/1380259489600634972/2.png?ex=68433a52&is=6841e8d2&hm=ee9e26405771f3715c336b515e27fffc00928a9362c5e07534d7a2da3bbe35d8&=&format=webp&quality=lossless",
+    "r_15_img":"https://media.discordapp.net/attachments/1374057184622542978/1380259489235734608/1.png?ex=68433a52&is=6841e8d2&hm=7f4a807300d72c48a104ce69f881bba2d453a5d102184118c4482ab7397b4647&=&format=webp&quality=lossless",
+    "sr_0_img":"https://media.discordapp.net/attachments/1374057184622542978/1380259490833895476/5.png?ex=68433a52&is=6841e8d2&hm=8880a9a134c5adaaf0a63bd301d155f0441f016c87d30d3c41550d0df7dbc988&=&format=webp&quality=lossless",
+    "sr_5_img":"https://media.discordapp.net/attachments/1374057184622542978/1380259491211120680/6.png?ex=68433a52&is=6841e8d2&hm=ba073ae0a44a8e31f8cf5a525ce8f244e752351509ecdda51752861b6be444d7&=&format=webp&quality=lossless",
+    "sr_10_img":"https://media.discordapp.net/attachments/1374057184622542978/1380259491563569162/7.png?ex=68433a52&is=6841e8d2&hm=508a48b8730a80a9915a04ed2aeac38b7c3fe0e2d0899d4b44f03bf7b78926b2&=&format=webp&quality=lossless",
+    "sr_15_img":"https://media.discordapp.net/attachments/1374057184622542978/1380259488904249426/8.png?ex=68433a52&is=6841e8d2&hm=287016344fd264f78b28c615641a9058fcf7bbc4645511e01e3dd922eaade419&=&format=webp&quality=lossless",
+    
+    "feed_exp":{
+      "r": 200,
+      "sr": 500,
+      "ssr": 1000
+    },
+
+    "level_up_exp": 3000,
+    "max_level": 15,
+
+    "r_crit_prob":[
+      0.176, 0.500, 1.000,  
+      0.208, 0.650, 1.000,  
+      0.240, 0.750, 1.000,  
+      0.272, 0.850, 1.000,  
+      0.400, 1.000, 1.000,  
+      0.160, 0.500, 1.000,  
+      0.192, 0.600, 1.000,  
+      0.224, 0.700, 1.000,  
+      0.272, 0.850, 1.000,  
+      0.400, 1.000, 1.000,  
+      0.144, 0.450, 1.000,  
+      0.176, 0.550, 1.000,  
+      0.224, 0.700, 1.000,  
+      0.272, 0.850, 1.000,  
+      0.400, 1.000, 1.000  
+    ],
+    "sr_crit_prob":[
+      0.036, 0.110, 0.250,  
+      0.059, 0.198, 0.400,  
+      0.078, 0.287, 0.550,  
+      0.113, 0.413, 0.750,  
+      0.150, 0.550, 1.000,  
+      0.022, 0.080, 0.200,  
+      0.033, 0.120, 0.300,  
+      0.049, 0.180, 0.450,  
+      0.076, 0.280, 0.700,  
+      0.125, 0.500, 1.000,  
+      0.012, 0.054, 0.150,  
+      0.022, 0.099, 0.275,  
+      0.031, 0.144, 0.400,  
+      0.047, 0.216, 0.600,  
+      0.100, 0.450, 1.000  
+    ]
+  },
+
+  "CHAT_DRAW_ONE": {
+    "enable": true,
+    "cooldown": 60,
+    "channel": "chat"
+  },
+
+  "CARD_IMAGE_UTILS": {
+    "enable": true,
+    "cards_folder":"assets/cards",
+    "merged_cards_folder": "assets/merged_cards",
+    "N_folder": "assets/card_assets/N",
+    "label_folder": "assets/card_assets/label",
+    "card_size": [128, 256],
+    "extensions":[".png", "..png"]
+  },
+
+  "VC_JOIN_LEAVE": {
+    "enable": true,
+    "command": "command"
+  },
+
+  "AFFIX_REROLL": {
+    "enable": true,
+    "channel": "game",
+    "cooldown": 60,
+    "img": "https://cdn.discordapp.com/attachments/1374057184622542978/1375123322597015614/c57b88d6-62ed-4008-9edc-ce25edb86b2b.png?ex=68425724&is=684105a4&hm=afe0c9bbd8e37f15b694c50c57e1d0f5009c8672c0be43ec9321fa00f5f034fa&",
+    "first_prob":1,
+    "second_prob":0.5,
+    "third_prob":0.3,
+
+    "img_enable": true,
+
+    "effects":{
+      "優越代碼傷害增加":{
+        "prob": 0.12,
+        "name": "code_damage_tiers",
+        "tier": {
+        "1": {"9.54%": 0.12}, "2": {"10.94%": 0.12}, "3": {"12.34%": 0.12},
+        "4": {"13.75%": 0.12}, "5": {"15.15%": 0.12}, "6": {"16.55%": 0.07},
+        "7": {"17.95%": 0.07}, "8": {"19.35%": 0.07}, "9": {"20.75%": 0.07},
+        "10": {"22.15%": 0.07}, "11": {"23.56": 0.01}, "12": {"24.96%": 0.01},
+        "13": {"26.36%": 0.01}, "14": {"27.76%": 0.01}, "15": {"29.16%": 0.01}
+        }
+      },
+      "命中率增加":{
+        "prob": 0.12,
+        "name": "hit_rate_tiers",
+        "tier": {
+        "1": {"4.77%": 0.12}, "2": {"5.47%": 0.12}, "3": {"6.18%": 0.12},
+        "4": {"6.88%": 0.12}, "5": {"7.59%": 0.12}, "6": {"8.29%": 0.07},
+        "7": {"9.00%": 0.07}, "8": {"9.70%": 0.07}, "9": {"10.40%": 0.07},
+        "10": {"11.11%": 0.07}, "11": {"11.81%": 0.01}, "12": {"12.52%": 0.01},
+        "13": {"13.22%": 0.01}, "14": {"13.93%": 0.01}, "15": {"14.63%": 0.01}
+        }
+      },
+      "攻擊力增加":{
+        "prob": 0.10,
+        "name": "attack_tiers",
+        "tier": {
+        "1": {"4.77%": 0.12}, "2": {"5.47%": 0.12}, "3": {"6.18%": 0.12},
+        "4": {"6.88%": 0.12}, "5": {"7.59%": 0.12}, "6": {"8.29%": 0.07},
+        "7": {"9.00%": 0.07}, "8": {"9.70%": 0.07}, "9": {"10.40%": 0.07},
+        "10": {"11.11%": 0.07}, "11": {"11.81%": 0.01}, "12": {"12.52%": 0.01},
+        "13": {"13.22%": 0.01}, "14": {"13.93%": 0.01}, "15": {"14.63%": 0.01}
+        }
+      },
+      "蓄力傷害增加":{
+        "prob": 0.12,
+        "name": "charge_damage_tiers",
+        "tier": {
+        "1": {"4.77%": 0.12}, "2": {"5.47%": 0.12}, "3": {"6.18%": 0.12},
+        "4": {"6.88%": 0.12}, "5": {"7.59%": 0.12}, "6": {"8.29%": 0.07},
+        "7": {"9.00%": 0.07}, "8": {"9.70%": 0.07}, "9": {"10.40%": 0.07},
+        "10": {"11.11%": 0.07}, "11": {"11.81%": 0.01}, "12": {"12.52%": 0.01},
+        "13": {"13.22%": 0.01}, "14": {"13.93%": 0.01}, "15": {"14.63%": 0.01}
+        }
+      },
+      "防禦力增加":{
+        "prob": 0.10,
+        "name": "defense_tiers",
+        "tier": {
+        "1": {"4.77%": 0.12}, "2": {"5.47%": 0.12}, "3": {"6.18%": 0.12},
+        "4": {"6.88%": 0.12}, "5": {"7.59%": 0.12}, "6": {"8.29%": 0.07},
+        "7": {"9.00%": 0.07}, "8": {"9.70%": 0.07}, "9": {"10.40%": 0.07},
+        "10": {"11.11%": 0.07}, "11": {"11.81%": 0.01}, "12": {"12.52%": 0.01},
+        "13": {"13.22%": 0.01}, "14": {"13.93%": 0.01}, "15": {"14.63%": 0.01}
+        }
+      },
+      "最大裝彈數增加":{
+        "prob": 0.12,
+        "name": "max_ammo_tiers",
+        "tier": {
+        "1": {"27.84%": 0.12}, "2": {"31.95%": 0.12}, "3": {"36.06%": 0.12},
+        "4": {"40.17%": 0.12}, "5": {"44.28%": 0.12}, "6": {"48.39%": 0.07},
+        "7": {"52.50%": 0.07}, "8": {"56.60%": 0.07}, "9": {"60.71%": 0.07},
+        "10": {"64.82%": 0.07}, "11": {"68.93%": 0.01}, "12": {"73.04%": 0.01},
+        "13": {"77.15%": 0.01}, "14": {"81.26%": 0.01}, "15": {"85.37%": 0.01}
+        }
+      },
+      "蓄力速度增加":{
+        "prob": 0.12,
+        "name": "charge_speed_tiers",
+        "tier": {
+        "1": {"1.98%": 0.12}, "2": {"2.28%": 0.12}, "3": {"2.57%": 0.12},
+        "4": {"2.86%": 0.12}, "5": {"3.16%": 0.12}, "6": {"3.45%": 0.07},
+        "7": {"3.75%": 0.07}, "8": {"4.04%": 0.07}, "9": {"4.33%": 0.07},
+        "10": {"4.63%": 0.07}, "11": {"4.92%": 0.01}, "12": {"5.21%": 0.01},
+        "13": {"5.51%": 0.01}, "14": {"5.80%": 0.01}, "15": {"6.09%": 0.01}
+        }
+      },
+      "暴擊率增加":{
+        "prob": 0.12,
+        "name": "crit_rate_tiers",
+        "tier": {
+        "1": {"2.30%": 0.12}, "2": {"2.64%": 0.12}, "3": {"2.98%": 0.12},
+        "4": {"3.32%": 0.12}, "5": {"3.66%": 0.12}, "6": {"4.00%": 0.07},
+        "7": {"4.35%": 0.07}, "8": {"4.69%": 0.07}, "9": {"5.03%": 0.07},
+        "10": {"5.37%": 0.07}, "11": {"5.71%": 0.01}, "12": {"6.05%": 0.01},
+        "13": {"6.39%": 0.01}, "14": {"6.73%": 0.01}, "15": {"7.07%": 0.01}
+        }
+      },
+      "暴擊傷害增加":{
+        "prob": 0.10,
+        "name": "crit_damage_tiers",
+        "tier": {
+        "1": {"6.64%": 0.12}, "2": {"7.62%": 0.12}, "3": {"8.60%": 0.12},
+        "4": {"9.58%": 0.12}, "5": {"10.56%": 0.12}, "6": {"11.54%": 0.07},
+        "7": {"12.52%": 0.07}, "8": {"13.50%": 0.07}, "9": {"14.48%": 0.07},
+        "10": {"15.46%": 0.07}, "11": {"16.44%": 0.01}, "12": {"17.42%": 0.01},
+        "13": {"18.40%": 0.01}, "14": {"19.38%": 0.01}, "15": {"20.36%": 0.01}
+        }
+      }
+    }
+  },
+
+  "GET_GACHA_DATA": {
+    "enable": true,
+    "channel": "game",
+    "cooldown": 60
+  },
+
+  "VC_SPEAK": {
+  "enable": true,
+  "command": "command",
+  "voice_path": "temp/voice.mp3"
+  },
+
+  "FOLLOW_REACTION":{
+    "enable": true,
+    "cooldown": 0,
+    "channel": "chat"
+  },
+
+  "VERTICAL_MERGE":{
+    "enable": true,
+    "cooldown": 60,
+    "channel": "chat"
+  },
+
+  "AFFIX_IMAGE_UTILS":{
+    "enable": true,
+    "background_folder": "assets/affix_reroll/",
+    "word_font_path": "assets/font/NotoSansTC-ExtraBold.ttf",
+    "number_font_path": "assets/font/Orbitron-SemiBold.ttf",
+    "coordinate": [[254, 130], [254, 167], [254, 204]],
+    "default_color": [90, 90, 90],
+    "blue_color": [0, 175, 255],
+    "white_color": [235, 235, 235]
+  }
+}
